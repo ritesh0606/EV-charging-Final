@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}Sign Up - EV Charging Station Finder{% endblock %}
+
+{% block content %}
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <form method="post" action="/signup">
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+        <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+{% endblock %}
+

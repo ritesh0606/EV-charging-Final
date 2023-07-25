@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+nav {
+    background-color: #5be577; /* Light green color for navbar */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px; /* Rounded corners for navbar */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    margin-left: auto;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Remove the default underline */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #4682B4; /* Change the link color on hover */
+}
+
+.content {
+    position: relative; /* Add relative positioning to the content div */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 80px;
+    
+}
+
+footer {
+    clear: both; /* Add clear:both to prevent overlapping with the above content */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0px;
+}
+
+.form-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Add styles for the EV car animation */
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.ev-car {
+    position: absolute;
+    bottom: 150px; /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slide-in 2s ease;
+}
+/* Fancier submit button */
+input[type="submit"] {
+    background-color: #06b0b6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #6eea74;
+}
+
+/* Add your custom CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4
+}
